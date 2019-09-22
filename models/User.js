@@ -1,16 +1,16 @@
-const { Text, Checkbox, Password } = require('@keystone-alpha/fields');
+const {Text, Checkbox, Password} = require('@keystone-alpha/fields');
 
 // Access control functions
-const { access } = require('./Roles');
+const {access} = require('./Roles');
 
 module.exports = {
   fields: {
-    name: { type: Text },
+    name: {type: Text},
     email: {
       type: Text,
       isUnique: true,
     },
-    isAdmin: { type: Checkbox },
+    isAdmin: {type: Checkbox},
     password: {
       type: Password,
     },

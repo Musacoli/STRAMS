@@ -1,9 +1,9 @@
-const { Keystone } = require('@keystone-alpha/keystone');
-const { PasswordAuthStrategy } = require('@keystone-alpha/auth-password');
-const { GraphQLApp } = require('@keystone-alpha/app-graphql');
-const { AdminUIApp } = require('@keystone-alpha/app-admin-ui');
-const { MongooseAdapter: Adapter } = require('@keystone-alpha/adapter-mongoose');
-const { UserSchema, StudentSchema, ClassroomSchema, SubjectSchema, TeacherSchema, ScoresheetSchema } = require('./models/index');
+const {Keystone} = require('@keystone-alpha/keystone');
+const {PasswordAuthStrategy} = require('@keystone-alpha/auth-password');
+const {GraphQLApp} = require('@keystone-alpha/app-graphql');
+const {AdminUIApp} = require('@keystone-alpha/app-admin-ui');
+const {MongooseAdapter: Adapter} = require('@keystone-alpha/adapter-mongoose');
+const {UserSchema, StudentSchema, ClassroomSchema, SubjectSchema, TeacherSchema, ScoresheetSchema} = require('./models/index');
 
 const PROJECT_NAME = "STRAMS";
 
@@ -31,6 +31,6 @@ module.exports = {
   apps: [
     new GraphQLApp(),
     // To create an initial user you can temporarily remove the authStrategy below
-    new AdminUIApp({ enableDefaultRoute: true, authStrategy }),
+    new AdminUIApp({enableDefaultRoute: true, authStrategy}),
   ],
 };

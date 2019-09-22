@@ -1,4 +1,4 @@
-const { Text, Relationship, Checkbox } = require('@keystone-alpha/fields');
+const {Text, Relationship, Checkbox} = require('@keystone-alpha/fields');
 
 module.exports = {
   fields: {
@@ -25,4 +25,4 @@ module.exports = {
       defaultValue: false
     }
   }
-}
+};

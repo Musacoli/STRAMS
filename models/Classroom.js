@@ -1,4 +1,4 @@
-const { Text, Relationship } = require('@keystone-alpha/fields');
+const {Text, Relationship} = require('@keystone-alpha/fields');
 
 module.exports = {
   fields: {
