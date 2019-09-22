@@ -18,6 +18,11 @@ module.exports = {
       ref: 'Student',
       many: true,
     },
+    teachers: {
+      type: Relationship,
+      ref: 'Teacher',
+      many: true,
+    },
     campus: {
       type: Text,
     }
