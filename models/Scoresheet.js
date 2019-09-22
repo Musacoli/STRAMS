@@ -6,11 +6,12 @@ module.exports = {
       type: Relationship,
       ref: 'Teacher',
     },
-    student: {
+    students: {
       type: Relationship,
       ref: 'Student',
+      many: true,
     },
-    subjects: {
+    subject: {
       type: Relationship,
       ref: 'Subject',
       many: true,
@@ -30,4 +31,4 @@ module.exports = {
       type: Text,
     }
   }
-}
+};
