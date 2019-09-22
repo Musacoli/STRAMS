@@ -3,7 +3,7 @@ const { PasswordAuthStrategy } = require('@keystone-alpha/auth-password');
 const { GraphQLApp } = require('@keystone-alpha/app-graphql');
 const { AdminUIApp } = require('@keystone-alpha/app-admin-ui');
 const { MongooseAdapter: Adapter } = require('@keystone-alpha/adapter-mongoose');
-const { UserSchema, StudentSchema, ClassroomSchema, SubjectSchema, TeacherSchema } = require('./models/index');
+const { UserSchema, StudentSchema, ClassroomSchema, SubjectSchema, TeacherSchema, ScoresheetSchema } = require('./models/index');
 
 const PROJECT_NAME = "STRAMS";
 
@@ -19,6 +19,7 @@ keystone.createList('Student', StudentSchema);
 keystone.createList('Classroom', ClassroomSchema);
 keystone.createList('Subject', SubjectSchema);
 keystone.createList('Teacher', TeacherSchema);
+keystone.createList('Scoresheet', ScoresheetSchema);
 
 const authStrategy = keystone.createAuthStrategy({
   type: PasswordAuthStrategy,

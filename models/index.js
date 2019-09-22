@@ -3,6 +3,7 @@ const StudentSchema = require('./Student');
 const ClassroomSchema = require('./Classroom');
 const SubjectSchema = require('./Subject');
 const TeacherSchema = require('./Teacher');
+const ScoresheetSchema = require('./Scoresheet');
 
 module.exports = {
   UserSchema,
@@ -10,4 +11,5 @@ module.exports = {
   ClassroomSchema,
   SubjectSchema,
   TeacherSchema,
+  ScoresheetSchema,
 };
