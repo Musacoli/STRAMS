@@ -5,6 +5,7 @@ const SubjectSchema = require('./Subject');
 const TeacherSchema = require('./Teacher');
 const ScoresheetSchema = require('./Scoresheet');
 const ExamSchema = require('./Exam');
+const ScoreSchema = require('./Score');
 
 module.exports = {
   UserSchema,
@@ -14,4 +15,5 @@ module.exports = {
   TeacherSchema,
   ScoresheetSchema,
   ExamSchema,
+  ScoreSchema,
 };
