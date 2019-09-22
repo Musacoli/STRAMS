@@ -1,34 +1,28 @@
 const {Text, Relationship, DateTime} = require('@keystone-alpha/fields');
+const { atTracking, byTracking } = require('@keystone-alpha/list-plugins');
 
 module.exports = {
   fields: {
-    teacher: {
-      type: Relationship,
-      ref: 'Teacher',
-    },
-    students: {
+    student: {
       type: Relationship,
       ref: 'Student',
-      many: true,
-    },
-    subject: {
-      type: Relationship,
-      ref: 'Subject',
       many: true,
     },
     exam: {
       type: Relationship,
       ref: 'Exam',
     },
-    dateCreated: {
-      type: DateTime,
-      format: 'DD/MM/YYYY h:mm A',
-      yearRangeFrom: 2019,
-      yearRangeTo: 2029,
-      defaultValue: Date.now(),
+    subjectScores: {
+      type: Relationship,
+      ref: 'Score',
+      many: true,
     },
     comment: {
       type: Text,
     }
-  }
+  },
+  plugins: [
+    atTracking({}),
+      byTracking({}),
+  ]
 };

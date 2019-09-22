@@ -1,4 +1,5 @@
 const {Text, Relationship, Checkbox} = require('@keystone-alpha/fields');
+const { atTracking } = require('@keystone-alpha/list-plugins');
 
 module.exports = {
   fields: {
@@ -24,5 +25,8 @@ module.exports = {
       type: Checkbox,
       defaultValue: false
     }
-  }
+  },
+  plugins: [
+    atTracking({})
+  ]
 };

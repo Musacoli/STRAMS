@@ -1,4 +1,5 @@
-const {Relationship, Integer} = require('@keystone-alpha/fields');
+const {Relationship, Integer, Uuid} = require('@keystone-alpha/fields');
+const { atTracking, byTracking } = require('@keystone-alpha/list-plugins');
 
 module.exports = {
   fields: {
@@ -15,9 +16,9 @@ module.exports = {
       type: Relationship,
       ref: 'Student',
     },
-    exam: {
-      type: Relationship,
-      ref: 'Exam',
-    }
-  }
-}
+  },
+  plugins: [
+    atTracking({}),
+    byTracking({}),
+  ]
+};

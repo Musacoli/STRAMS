@@ -1,4 +1,5 @@
 const {Text, Checkbox, Password} = require('@keystone-alpha/fields');
+const { atTracking } = require('@keystone-alpha/list-plugins');
 
 // Access control functions
 const {access} = require('./Roles');
@@ -23,4 +24,7 @@ module.exports = {
     delete: access.userIsAdmin,
     auth: true,
   },
+  plugins: [
+      atTracking({})
+  ]
 };

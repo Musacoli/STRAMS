@@ -1,4 +1,5 @@
 const {Text, Relationship} = require('@keystone-alpha/fields');
+const { atTracking } = require('@keystone-alpha/list-plugins');
 
 module.exports = {
   fields: {
@@ -26,5 +27,8 @@ module.exports = {
     campus: {
       type: Text,
     }
-  }
-}
+  },
+  plugins: [
+    atTracking({})
+  ]
+};
