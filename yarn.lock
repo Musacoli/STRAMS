@@ -6471,9 +6471,9 @@ lru-cache@^5.0.0, lru-cache@^5.1.1:
     yallist "^3.0.2"
 
 luxon@^1.11.4:
-  version "1.18.2"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.18.2.tgz#0f03d5f1f5fdd6ab74c2407533ffc12cd06827eb"
-  integrity sha512-Vanyg+CjU9mkSCYA+OZqh3VG3Cucy3ybw66RwVBTrHzCS3v/LZYsmxW14IyNPVhp1U7TIr7ogMKA1+PHzQasiQ==
+  version "1.28.1"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.28.1.tgz#528cdf3624a54506d710290a2341aa8e6e6c61b0"
+  integrity sha512-gYHAa180mKrNIUJCbwpmD0aTu9kV0dREDrwNnuyFAsO1Wt0EVYSZelPnJlbj9HplzXX/YWXHFTL45kvZ53M0pw==
 
 magic-string@^0.25.1, magic-string@^0.25.2:
   version "0.25.3"
